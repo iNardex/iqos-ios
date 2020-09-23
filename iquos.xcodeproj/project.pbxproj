@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F6FF7842518E97400458BB7 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6FF7832518E97400458BB7 /* WidgetKit.framework */; };
-		3F6FF7862518E97400458BB7 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6FF7852518E97400458BB7 /* SwiftUI.framework */; };
-		3F6FF7922518E97600458BB7 /* iquos_widgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3F6FF7812518E97400458BB7 /* iquos_widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3FB8D52B251815FB003C13E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB8D52A251815FB003C13E3 /* AppDelegate.swift */; };
 		3FB8D52D251815FB003C13E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB8D52C251815FB003C13E3 /* SceneDelegate.swift */; };
 		3FB8D52F251815FB003C13E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB8D52E251815FB003C13E3 /* ViewController.swift */; };
@@ -20,16 +17,6 @@
 		3FB8D543251897B4003C13E3 /* AnimationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB8D542251897B4003C13E3 /* AnimationExtension.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		3F6FF7902518E97600458BB7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3FB8D51F251815FB003C13E3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3F6FF7802518E97400458BB7;
-			remoteInfo = iquos_widgetExtension;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		3F6FF7962518E97600458BB7 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -37,7 +24,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				3F6FF7922518E97600458BB7 /* iquos_widgetExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,7 +32,6 @@
 
 /* Begin PBXFileReference section */
 		3F6FF7792518E75B00458BB7 /* iquos.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iquos.entitlements; sourceTree = "<group>"; };
-		3F6FF7812518E97400458BB7 /* iquos_widgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = iquos_widgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F6FF7832518E97400458BB7 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		3F6FF7852518E97400458BB7 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		3FB8D527251815FB003C13E3 /* iquos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iquos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,15 +47,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3F6FF77E2518E97400458BB7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3F6FF7862518E97400458BB7 /* SwiftUI.framework in Frameworks */,
-				3F6FF7842518E97400458BB7 /* WidgetKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3FB8D524251815FB003C13E3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -103,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				3FB8D527251815FB003C13E3 /* iquos.app */,
-				3F6FF7812518E97400458BB7 /* iquos_widgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,23 +103,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3F6FF7802518E97400458BB7 /* iquos_widgetExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3F6FF7932518E97600458BB7 /* Build configuration list for PBXNativeTarget "iquos_widgetExtension" */;
-			buildPhases = (
-				3F6FF77D2518E97400458BB7 /* Sources */,
-				3F6FF77E2518E97400458BB7 /* Frameworks */,
-				3F6FF77F2518E97400458BB7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = iquos_widgetExtension;
-			productName = iquos_widgetExtension;
-			productReference = 3F6FF7812518E97400458BB7 /* iquos_widgetExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 		3FB8D526251815FB003C13E3 /* iquos */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FB8D53B251815FC003C13E3 /* Build configuration list for PBXNativeTarget "iquos" */;
@@ -157,7 +115,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				3F6FF7912518E97600458BB7 /* PBXTargetDependency */,
 			);
 			name = iquos;
 			productName = iquos;
@@ -173,9 +130,6 @@
 				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
-					3F6FF7802518E97400458BB7 = {
-						CreatedOnToolsVersion = 12.0;
-					};
 					3FB8D526251815FB003C13E3 = {
 						CreatedOnToolsVersion = 12.0;
 					};
@@ -195,19 +149,11 @@
 			projectRoot = "";
 			targets = (
 				3FB8D526251815FB003C13E3 /* iquos */,
-				3F6FF7802518E97400458BB7 /* iquos_widgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3F6FF77F2518E97400458BB7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3FB8D525251815FB003C13E3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -221,13 +167,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3F6FF77D2518E97400458BB7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3FB8D523251815FB003C13E3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -241,14 +180,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		3F6FF7912518E97600458BB7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3F6FF7802518E97400458BB7 /* iquos_widgetExtension */;
-			targetProxy = 3F6FF7902518E97600458BB7 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3FB8D530251815FB003C13E3 /* Main.storyboard */ = {
@@ -270,48 +201,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		3F6FF7942518E97600458BB7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T2FR3L59TZ;
-				INFOPLIST_FILE = iquos_widget/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.inardex.iquos.iquos-widget";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		3F6FF7952518E97600458BB7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T2FR3L59TZ;
-				INFOPLIST_FILE = iquos_widget/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.inardex.iquos.iquos-widget";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		3FB8D539251815FC003C13E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -473,15 +362,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3F6FF7932518E97600458BB7 /* Build configuration list for PBXNativeTarget "iquos_widgetExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3F6FF7942518E97600458BB7 /* Debug */,
-				3F6FF7952518E97600458BB7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		3FB8D522251815FB003C13E3 /* Build configuration list for PBXProject "iquos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
